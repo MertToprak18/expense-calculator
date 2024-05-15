@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harcama Hesaplayacı</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="greet">
+        <span>Selam,</span>
+        <input id="kullaniciAdi" type="text" placeholder="isminizi giriniz.." />
+      </h2>
+
+      <form id="add-form">
+        <div class="field-area">
+          <div class="form-control">
+            <input type="text" required />
+            <label>
+              <span style="transition-delay: 0ms">H</span>
+              <span style="transition-delay: 50ms">a</span>
+              <span style="transition-delay: 100ms">r</span>
+              <span style="transition-delay: 150ms">c</span>
+              <span style="transition-delay: 200ms">a</span>
+              <span style="transition-delay: 250ms">m</span>
+              <span style="transition-delay: 300ms">a</span>
+            </label>
+          </div>
+          <div class="form-control">
+            <input type="number" required />
+            <label>
+              <span style="transition-delay: 0ms">F</span>
+              <span style="transition-delay: 50ms">i</span>
+              <span style="transition-delay: 100ms">y</span>
+              <span style="transition-delay: 150ms">a</span>
+              <span style="transition-delay: 200ms">t</span>
+            </label>
+          </div>
+        </div>
+        <div class="checkboxBtn">
+          <div>
+            <label class="checkboxContainer">
+              <input type="checkbox" id="checkbox" />
+              <div class="checkmark"></div>
+            </label>
+          </div>
+          <button class="addBtn" id="addBtn" type="submit">Ekle</button>
+        </div>
+      </form>
+      <div class="toplam">Toplam Harcama <span id="price-info">0</span> ₺</div>
+
+      <div id="list"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
