@@ -43,6 +43,14 @@ body {
     padding: 15px;
   }
 }
+@media (max-width: 480px) {
+  .form-control input {
+    width: 100px;
+  }
+  .greet input {
+    width: 100px;
+  }
+}
 
 /* karşılama metni  */
 
